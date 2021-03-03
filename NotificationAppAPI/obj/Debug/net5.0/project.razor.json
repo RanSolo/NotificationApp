@@ -1,5 +1,5 @@
 {
-  "FilePath": "/Users/randallrussell/Projects/ZapcomGroup/apps/NotificationApp/NotificationAppAPI/NotificationAppAPI.csproj",
+  "FilePath": "/Users/randallrussell/Projects/NotificationMS/NotificationAppAPI/NotificationAppAPI.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",
@@ -15603,27 +15603,27 @@
   "RootNamespace": "NotificationAppAPI",
   "Documents": [
     {
-      "FilePath": "/Users/randallrussell/Projects/ZapcomGroup/apps/NotificationApp/NotificationAppAPI/Views/MessengerUsersAsync/Create.cshtml",
-      "TargetPath": "Views\\MessengerUsersAsync\\Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/randallrussell/Projects/ZapcomGroup/apps/NotificationApp/NotificationAppAPI/Views/MessengerUsersAsync/Details.cshtml",
+      "FilePath": "/Users/randallrussell/Projects/NotificationMS/NotificationAppAPI/Views/MessengerUsersAsync/Details.cshtml",
       "TargetPath": "Views\\MessengerUsersAsync\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/randallrussell/Projects/ZapcomGroup/apps/NotificationApp/NotificationAppAPI/Views/MessengerUsersAsync/Delete.cshtml",
+      "FilePath": "/Users/randallrussell/Projects/NotificationMS/NotificationAppAPI/Views/MessengerUsersAsync/Delete.cshtml",
       "TargetPath": "Views\\MessengerUsersAsync\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/randallrussell/Projects/ZapcomGroup/apps/NotificationApp/NotificationAppAPI/Views/MessengerUsersAsync/Index.cshtml",
+      "FilePath": "/Users/randallrussell/Projects/NotificationMS/NotificationAppAPI/Views/MessengerUsersAsync/Create.cshtml",
+      "TargetPath": "Views\\MessengerUsersAsync\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/randallrussell/Projects/NotificationMS/NotificationAppAPI/Views/MessengerUsersAsync/Index.cshtml",
       "TargetPath": "Views\\MessengerUsersAsync\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/randallrussell/Projects/ZapcomGroup/apps/NotificationApp/NotificationAppAPI/Views/MessengerUsersAsync/Edit.cshtml",
+      "FilePath": "/Users/randallrussell/Projects/NotificationMS/NotificationAppAPI/Views/MessengerUsersAsync/Edit.cshtml",
       "TargetPath": "Views\\MessengerUsersAsync\\Edit.cshtml",
       "FileKind": "mvc"
     }
