@@ -1,0 +1,9 @@
+{
+	"azureFunctions.deploySubpath": "bin/Release/netcoreapp3.1/publish",
+	"azureFunctions.projectLanguage": "C#",
+	"azureFunctions.projectRuntime": "~3",
+	"debug.internalConsoleOptions": "neverOpen",
+	"azureFunctions.preDeployTask": "publish",
+	"appService.defaultWebAppToDeploy": "/subscriptions/05eefbf8-32ae-4249-a31a-edb3f25bc484/resourceGroups/POCs/providers/Microsoft.Web/sites/NotificationWA",
+	"appService.deploySubpath": "NotificationAppAPI"
+}
