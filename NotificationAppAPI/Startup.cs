@@ -25,7 +25,7 @@ namespace NotificationAppAPI
             services.AddControllers();
             
             services.AddDbContext<NotificationAppDbContext>(option =>
-                option.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))
+                option.UseSqlServer(Configuration.GetConnectionString("MyDbConnection"))
             );
 			services.AddSwaggerGen(c =>
             {
