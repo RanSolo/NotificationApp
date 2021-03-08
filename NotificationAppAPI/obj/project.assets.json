@@ -3539,7 +3539,7 @@
       },
       "MessageLibrary/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
+        "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer.Design": "1.1.6"
         },
