@@ -60,7 +60,7 @@ namespace NotificationAppAPI
                 .GetRequiredService<IServiceScopeFactory>()
                 .CreateScope())
             {
-                using (var context = serviceScope.ServiceProvider.GetService<MyDbContext>())
+                using (var context = serviceScope.ServiceProvider.GetService<NotificationAppDbContext>())
                 {
                     context.Database.Migrate();
                 }
