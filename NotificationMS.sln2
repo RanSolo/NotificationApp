@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.808.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotificationAppAPI", "NotificationAppAPI\NotificationAppAPI.csproj", "{7D148E8D-E746-4DF7-80F5-F133511DAAA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageLibrary", "MessageLibrary\MessageLibrary.csproj", "{917F303C-6EE1-48A5-A99E-7D40E0C7639D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D148E8D-E746-4DF7-80F5-F133511DAAA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D148E8D-E746-4DF7-80F5-F133511DAAA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D148E8D-E746-4DF7-80F5-F133511DAAA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D148E8D-E746-4DF7-80F5-F133511DAAA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{917F303C-6EE1-48A5-A99E-7D40E0C7639D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{917F303C-6EE1-48A5-A99E-7D40E0C7639D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{917F303C-6EE1-48A5-A99E-7D40E0C7639D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{917F303C-6EE1-48A5-A99E-7D40E0C7639D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5973007-5D41-4B01-97E1-F341DE8DE510}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5973007-5D41-4B01-97E1-F341DE8DE510}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5973007-5D41-4B01-97E1-F341DE8DE510}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5973007-5D41-4B01-97E1-F341DE8DE510}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5F3E5D75-FBC5-476C-9586-069C7CE90C9F}
+	EndGlobalSection
+EndGlobal

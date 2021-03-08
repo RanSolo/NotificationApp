@@ -15,7 +15,7 @@ namespace NotificationAppAPI
     [Route("api/[controller]")]
     public class UsersController : Controller
     {    
-        static SqlConnection conn = new SqlConnection("Server=tcp:127.0.0.1,1433;Database=NotificationsApi;UID=sa;PWD=SqlExpr@ss;");
+        static SqlConnection conn = new SqlConnection("Server=tcp:nblydbserver.database.windows.net,1433;Database=coreDB;User ID=sqladmin;Password=SQLsrad#3;");
 
         // GET: api/values
         [HttpGet]

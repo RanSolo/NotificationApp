@@ -6,6 +6,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using NotificationAppAPI.Data;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Mvc;
 
 namespace NotificationAppAPI
 {
@@ -25,7 +28,7 @@ namespace NotificationAppAPI
             services.AddControllers();
             
             services.AddDbContext<NotificationAppDbContext>(option =>
-                option.UseSqlServer(Configuration.GetConnectionString("MyDbConnection"))
+                option.UseSqlServer(Configuration.GetConnectionString("MyDBConnection"))
             );
 			services.AddSwaggerGen(c =>
             {
@@ -42,7 +45,7 @@ namespace NotificationAppAPI
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "NotificationAppAPI v1"));
             }
-            UpdateDatabase(app);
+
             app.UseHttpsRedirection();
 
             app.UseRouting();
@@ -53,18 +56,6 @@ namespace NotificationAppAPI
             {
                 endpoints.MapControllers();
             });
-        }
-        private static void UpdateDatabase(IApplicationBuilder app)
-        {
-            using (var serviceScope = app.ApplicationServices
-                .GetRequiredService<IServiceScopeFactory>()
-                .CreateScope())
-            {
-                using (var context = serviceScope.ServiceProvider.GetService<NotificationAppDbContext>())
-                {
-                    context.Database.Migrate();
-                }
-            }
         }
     }
 }
