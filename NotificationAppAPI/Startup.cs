@@ -42,7 +42,7 @@ namespace NotificationAppAPI
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "NotificationAppAPI v1"));
             }
-
+            UpdateDatabase(app);
             app.UseHttpsRedirection();
 
             app.UseRouting();
@@ -53,6 +53,18 @@ namespace NotificationAppAPI
             {
                 endpoints.MapControllers();
             });
+        }
+        private static void UpdateDatabase(IApplicationBuilder app)
+        {
+            using (var serviceScope = app.ApplicationServices
+                .GetRequiredService<IServiceScopeFactory>()
+                .CreateScope())
+            {
+                using (var context = serviceScope.ServiceProvider.GetService<MyDbContext>())
+                {
+                    context.Database.Migrate();
+                }
+            }
         }
     }
 }
